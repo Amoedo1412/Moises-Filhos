@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Moisés & Filhos</title>
+    <meta name="description" content="Fale connosco. Localizações em Celorico da Beira e Trancoso. Peça cotação de lenha, combusível ou agende visita aos automóveis.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .page-header { background: linear-gradient(135deg, var(--secondary) 0%, #172554 100%); padding: 150px 0 60px; color: white; text-align: center; }
+        .page-header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        
+        .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 5rem 0; }
+        
+        .contact-info-boxes { display: flex; flex-direction: column; gap: 2rem; }
+        .info-box { background: white; padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow-md); border-top: 4px solid var(--primary); }
+        .info-box h3 { font-size: 1.5rem; color: var(--secondary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .info-box ul { display: flex; flex-direction: column; gap: 1rem; }
+        .info-box li { display: flex; gap: 1rem; align-items: flex-start; color: var(--text-secondary); }
+        .info-box i { font-size: 1.5rem; color: var(--primary); margin-top: 2px; }
+        
+        .contact-form-wrapper { background: white; padding: 3rem; border-radius: var(--border-radius); box-shadow: var(--shadow-lg); }
+        .contact-form-wrapper h2 { font-size: 2rem; color: var(--secondary); margin-bottom: 0.5rem; }
+        .contact-form-wrapper > p { color: var(--text-secondary); margin-bottom: 2rem; }
+        
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary); }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.875rem; border: 1px solid #E2E8F0; border-radius: 6px; font-family: var(--font-body); font-size: 1rem; outline: none; transition: var(--transition); }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1); }
+        
+        @media (max-width: 768px) {
+            .contact-layout { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body style="background: var(--bg-main)">
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="https://moisesefilhos.pt/images/logo.png" alt="Moisés & Filhos Logo" style="height: 50px; width: auto;">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="viaturas.html">Viaturas</a>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="contactos.html" class="active">Contactos</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+351271811000" class="phone-link">
+                    <i class="ph ph-phone"></i> 271 811 000
+                </a>
+                <a href="https://wa.me/351965057082" target="_blank" class="btn btn-whatsapp">
+                    <i class="ph ph-whatsapp-logo"></i> WhatsApp
+                </a>
+                <button class="mobile-toggle"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Fale Connosco</h1>
+            <p>Estamos sempre disponíveis para ajudar. Faça o seu pedido de orçamento com resposta rápida.</p>
+        </div>
+    </section>
+
+    <main class="container contact-layout">
+        
+        <div class="contact-info-boxes">
+            <!-- HQ 1 -->
+            <div class="info-box">
+                <h3><i class="ph ph-storefront"></i> Stand Celorico da Beira</h3>
+                <ul>
+                    <li><i class="ph ph-map-pin"></i> Rotunda Dr. Olegário, 9<br>6360-220 Celorico da Beira</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfautomoveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> <div>José Luís: 965 057 082<br>Luís Gonçalves: 927 464 348</div></li>
+                </ul>
+            </div>
+            
+            <!-- HQ 2 -->
+            <div class="info-box">
+                <h3><i class="ph ph-warehouse"></i> Instalações Trancoso</h3>
+                <ul>
+                    <li><i class="ph ph-map-pin"></i> Quinta da Regada - EN 102<br>6420-437 Freches</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfcombustiveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> <div>Fixo: 271 878 800<br>Eduardo: 965 642 896<br>José Luís: 965 057 082</div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <h2>Pedir Orçamento</h2>
+            <p>Preencha os seus dados e responderemos o mais breve possível.</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label>O que procura?</label>
+                    <select name="assunto">
+                        <option value="automoveis">Informações sobre Automóveis</option>
+                        <option value="combustivel">Entrega de Combustível</option>
+                        <option value="lenha">Orçamento de Lenha</option>
+                        <option value="maquinas">Máquinas / Tratores</option>
+                        <option value="outro">Outro assunto</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" placeholder="O seu nome completo" required>
+                </div>
+                
+                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="Nº de telemóvel" required>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" placeholder="O seu email">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Mensagem ou Código Postal (para entregas)</label>
+                    <textarea rows="4" placeholder="Escreva aqui a sua mensagem..."></textarea>
+                </div>
+                
+                <button type="button" class="btn btn-primary" style="width: 100%; font-size: 1.125rem; padding: 1rem;">Enviar Pedido <i class="ph ph-paper-plane-tilt"></i></button>
+            </form>
+        </div>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                    <img src="https://moisesefilhos.pt/images/logo.png" alt="Moisés & Filhos Logo" style="height: 40px; width: auto; filter: brightness(0) invert(1);">
+                </a>
+                <p class="footer-desc">Soluções completas de mobilidade, agricultura e energia para o distrito da Guarda.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/moisesefilhos/" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Celorico da Beira</h3>
+                <ul class="contact-list">
+                    <li><i class="ph ph-map-pin"></i> Rotunda Dr. Olegário, 9<br>6360-220 Celorico da Beira</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfautomoveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> 965 057 082 / 927 464 348</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Trancoso (Freches)</h3>
+                <ul class="contact-list">
+                    <li><i class="ph ph-map-pin"></i> Quinta da Regada - EN 102<br>6420-437 Freches</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfcombustiveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> 271 878 800 / 965 642 896</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="viaturas.html">Automóveis em Stock</a></li>
+                    <li><a href="servicos.html">Serviços e Entregas</a></li>
+                    <li><a href="contactos.html">Contactos da Equipa</a></li>
+                    <li><a href="sobre.html">Intermediário de Crédito BNP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Moisés & Filhos. Todos os direitos reservados.</p>
+                <p>Website Design & Otimização desenvolvidos para gerar resultados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/351965057082" target="_blank" class="floating-whatsapp">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

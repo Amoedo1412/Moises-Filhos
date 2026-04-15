@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Moisés & Filhos</title>
+    <meta name="description" content="Conheça a história da Moisés & Filhos. Tradição, máquinas e energia no distrito da Guarda desde 1999.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .page-header { background: linear-gradient(135deg, var(--secondary) 0%, #172554 100%); padding: 150px 0 60px; color: white; text-align: center; }
+        .page-header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .about-history { padding: 5rem 0; }
+        .history-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .history-text h2 { font-size: 2.5rem; color: var(--secondary); margin-bottom: 1.5rem; }
+        .history-text p { font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
+        .values-section { background: var(--bg-card); padding: 5rem 0; }
+        .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+        .value-card { padding: 2rem; border-radius: var(--border-radius); background: var(--bg-main); text-align: center; }
+        .value-card i { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
+        .value-card h3 { font-size: 1.25rem; color: var(--secondary); margin-bottom: 1rem; }
+        
+        @media (max-width: 768px) {
+            .history-grid { grid-template-columns: 1fr; }
+            .values-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="https://moisesefilhos.pt/images/logo.png" alt="Moisés & Filhos Logo" style="height: 50px; width: auto;">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="viaturas.html">Viaturas</a>
+                <a href="sobre.html" class="active">Sobre Nós</a>
+                <a href="contactos.html">Contactos</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+351271811000" class="phone-link">
+                    <i class="ph ph-phone"></i> 271 811 000
+                </a>
+                <a href="https://wa.me/351965057082" target="_blank" class="btn btn-whatsapp">
+                    <i class="ph ph-whatsapp-logo"></i> WhatsApp
+                </a>
+                <button class="mobile-toggle"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary-dark) 100%);">
+        <div class="container">
+            <h1>O Seu Sucesso é a Nossa Herança</h1>
+            <p>Mais do que negociar viaturas e máquinas, o nosso propósito é construir parcerias duradouras que o impulsionam. Conquiste os seus objetivos lado a lado com a Moisés & Filhos.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- History Section -->
+        <section class="about-history">
+            <div class="container history-grid">
+                <div class="history-text">
+                    <h2>Raízes Profundas, Visão Ilimitada</h2>
+                    <p>Fundada em 1999 com sangue, suor e uma paixão inabalável pelo progresso, a Moisés & Filhos nasceu não apenas para ser um negócio, mas sim para ser um pilar de força na comunidade da Guarda e arredores.</p>
+                    <p>Nós sabemos que por detrás de cada volante de uma carrinha comercial ou volante de um trator no campo chuvoso, existe um profissional ou um pai de família a lutar por um amanhã mais brilhante. Foi por isso que evoluímos de um pequeno projeto para um centro de soluções fundamentais: se você precisa de avançar, nós temos o motor.</p>
+                    <p>Hoje, de Celorico da Beira a Trancoso, o nosso espírito familiar é o nosso maior trunfo competitivo. Tratamos a sua ambição com a mesma transparência e garra com que traçámos o nosso próprio sucesso.</p>
+                </div>
+                <div class="about-image" style="background: url('sobre_motivational.png') center/cover; height: 500px; border-radius: 20px; box-shadow: var(--shadow-orange);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem; color: var(--secondary); margin-bottom: 2rem;">Os Nossos Trunfos Para A Sua Vitória</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="ph ph-handshake"></i>
+                        <h3 style="color: var(--primary);">Parceria de Ferro</h3>
+                        <p>Tratamos o seu desafio financeiro ou logístico de forma pessoal. O crédito aprova-se. A confiança, ganha-se.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="ph ph-lightning"></i>
+                        <h3 style="color: var(--primary);">Rapidez Feroz</h3>
+                        <p>Na estrada ou no campo, a lentidão tem um custo alto. As nossas entregas e resoluções têm energia que a concorrência não acompanha.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="ph ph-shield-star"></i>
+                        <h3 style="color: var(--primary);">Garantia Absoluta</h3>
+                        <p>Invista sem medos. Atrás da sua máquina ou viatura comprada, existe uma equipa pronta para segurar a sua estabilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="cta-section" style="padding: 5rem 0; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); text-align: center; color: white;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Pronto para Acelerar a Sua Vida?</h2>
+            <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto 2rem;">O momento de dar o salto para o seu próximo carro ou negócio de sucesso é agora. Dê-nos a honra da sua visita.</p>
+            <a href="contactos.html" class="btn btn-outline-white" style="font-weight: bold; border-width: 3px;">Marcar Um Encontro Estratégico</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                    <img src="https://moisesefilhos.pt/images/logo.png" alt="Moisés & Filhos Logo" style="height: 40px; width: auto; filter: brightness(0) invert(1);">
+                </a>
+                <p class="footer-desc">Soluções completas de mobilidade, agricultura e energia para o distrito da Guarda.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/moisesefilhos/" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Celorico da Beira</h3>
+                <ul class="contact-list">
+                    <li><i class="ph ph-map-pin"></i> Rotunda Dr. Olegário, 9<br>6360-220 Celorico da Beira</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfautomoveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> 965 057 082 / 927 464 348</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Trancoso (Freches)</h3>
+                <ul class="contact-list">
+                    <li><i class="ph ph-map-pin"></i> Quinta da Regada - EN 102<br>6420-437 Freches</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfcombustiveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> 271 878 800 / 965 642 896</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="viaturas.html">Automóveis em Stock</a></li>
+                    <li><a href="servicos.html">Serviços e Entregas</a></li>
+                    <li><a href="contactos.html">Contactos da Equipa</a></li>
+                    <li><a href="sobre.html">Intermediário de Crédito BNP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Moisés & Filhos. Todos os direitos reservados.</p>
+                <p>Website Design & Otimização desenvolvidos para gerar resultados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/351965057082" target="_blank" class="floating-whatsapp">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

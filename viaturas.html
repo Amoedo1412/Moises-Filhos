@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock de Viaturas - Moisés & Filhos</title>
+    <meta name="description" content="Encontre o seu carro na Guarda. Stock atualizado de automóveis usados e semi-novos. Diferentes gamas, marcas e financiamento disponível.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .page-header { background: linear-gradient(135deg, var(--secondary) 0%, #172554 100%); padding: 150px 0 60px; color: white; text-align: center; }
+        .page-header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        
+        .filters-bar { background: white; padding: 1.5rem; margin: -30px auto 40px; box-shadow: var(--shadow-lg); border-radius: var(--border-radius); display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 10; max-width: 1000px;}
+        .filter-group { flex: 1; min-width: 150px; display: flex; flex-direction: column; gap: 0.5rem; }
+        .filter-group label { font-size: 0.875rem; font-weight: 600; color: var(--text-secondary); }
+        .filter-group select { padding: 0.75rem; border-radius: 6px; border: 1px solid #E2E8F0; font-family: var(--font-body); outline: none; }
+        
+        .stock-page-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; padding-bottom: 6rem; }
+    </style>
+</head>
+<body style="background: var(--bg-main)">
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="https://moisesefilhos.pt/images/logo.png" alt="Moisés & Filhos Logo" style="height: 50px; width: auto;">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="viaturas.html" class="active">Viaturas</a>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="contactos.html">Contactos</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+351271811000" class="phone-link">
+                    <i class="ph ph-phone"></i> 271 811 000
+                </a>
+                <a href="https://wa.me/351965057082" target="_blank" class="btn btn-whatsapp">
+                    <i class="ph ph-whatsapp-logo"></i> WhatsApp
+                </a>
+                <button class="mobile-toggle"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Stock de Automóveis</h1>
+            <p>Viaturas impecáveis à sua espera. Use os filtros para encontrar exatamente o que procura.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <!-- Filters -->
+        <div class="filters-bar">
+            <div class="filter-group">
+                <label>Marca</label>
+                <select>
+                    <option>Todas as Marcas</option>
+                    <option>Renault</option>
+                    <option>Peugeot</option>
+                    <option>Dacia</option>
+                    <option>Volkswagen</option>
+                    <option>Citroën</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Combustível</label>
+                <select>
+                    <option>Todos</option>
+                    <option>Diesel</option>
+                    <option>Gasolina</option>
+                    <option>Elétrico/Híbrido</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Preço Máximo</label>
+                <select>
+                    <option>Sem limite</option>
+                    <option>Até 10.000€</option>
+                    <option>Até 15.000€</option>
+                    <option>Até 25.000€</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Ordenação</label>
+                <select>
+                    <option>Mais Recentes</option>
+                    <option>Ordem Alfabética (A-Z)</option>
+                    <option>Ordem Alfabética (Z-A)</option>
+                    <option>Mais Baratos</option>
+                    <option>Mais Caros</option>
+                </select>
+            </div>
+            <div class="filter-group" style="justify-content: flex-end;">
+                <button class="btn btn-primary" style="width: 100%; border-radius: 6px;">Pesquisar</button>
+            </div>
+        </div>
+
+        <div id="active-stock-grid" class="stock-page-grid">
+            <!-- Os carros ativos (em array Javascript) vão ser injectados aqui -->
+        </div>
+        
+        <!-- Separator and Sold Cars -->
+        <hr style="border: 0; height: 1px; background: #E2E8F0; margin: 2rem 0 4rem;">
+        <h2 style="font-size: 2rem; color: var(--secondary); margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph ph-check-circle" style="color: var(--text-secondary);"></i> Viaturas Vendidas Recentemente</h2>
+        
+        <div id="sold-stock-grid" class="stock-page-grid" style="opacity: 0.7;">
+            <!-- Os carros vendidos vão ser injectados aqui -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                    <img src="https://moisesefilhos.pt/images/logo.png" alt="Moisés & Filhos Logo" style="height: 40px; width: auto; filter: brightness(0) invert(1);">
+                </a>
+                <p class="footer-desc">Soluções completas de mobilidade, agricultura e energia para o distrito da Guarda.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/moisesefilhos/" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Celorico da Beira</h3>
+                <ul class="contact-list">
+                    <li><i class="ph ph-map-pin"></i> Rotunda Dr. Olegário, 9<br>6360-220 Celorico da Beira</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfautomoveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> 965 057 082 / 927 464 348</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Trancoso (Freches)</h3>
+                <ul class="contact-list">
+                    <li><i class="ph ph-map-pin"></i> Quinta da Regada - EN 102<br>6420-437 Freches</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfcombustiveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> 271 878 800 / 965 642 896</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="viaturas.html">Automóveis em Stock</a></li>
+                    <li><a href="servicos.html">Serviços e Entregas</a></li>
+                    <li><a href="contactos.html">Contactos da Equipa</a></li>
+                    <li><a href="sobre.html">Intermediário de Crédito BNP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Moisés & Filhos. Todos os direitos reservados.</p>
+                <p>Website Design & Otimização desenvolvidos para gerar resultados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/351965057082" target="_blank" class="floating-whatsapp">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

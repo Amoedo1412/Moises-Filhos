@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Moisés & Filhos</title>
+    <meta name="description" content="Conheça os nossos serviços: Automóveis, Máquinas Agrícolas, Combustíveis ao domicílio e Lenha na Guarda e região.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header { background: linear-gradient(135deg, var(--secondary) 0%, #172554 100%); padding: 150px 0 60px; color: white; text-align: center; }
+        .page-header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .page-header p { font-size: 1.125rem; color: var(--text-light); max-width: 600px; margin: 0 auto; }
+        .detail-section { padding: 5rem 0; border-bottom: 1px solid #E2E8F0; }
+        .detail-section:last-child { border-bottom: none; }
+        .detail-container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .detail-container.reverse { direction: rtl; }
+        .detail-container.reverse > * { direction: ltr; }
+        .detail-image { background: var(--bg-main); border-radius: var(--border-radius-lg); height: 400px; }
+        .detail-content h2 { font-size: 2rem; color: var(--secondary); margin-bottom: 1.5rem; }
+        .detail-content p { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1.125rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="https://moisesefilhos.pt/images/logo.png" alt="Moisés & Filhos Logo" style="height: 50px; width: auto;">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="servicos.html" class="active">Serviços</a>
+                <a href="viaturas.html">Viaturas</a>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="contactos.html">Contactos</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+351271811000" class="phone-link">
+                    <i class="ph ph-phone"></i> 271 811 000
+                </a>
+                <a href="https://wa.me/351965057082" target="_blank" class="btn btn-whatsapp">
+                    <i class="ph ph-whatsapp-logo"></i> WhatsApp
+                </a>
+                <button class="mobile-toggle"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Os Nossos Serviços</h1>
+            <p>O pilar do seu dia a dia. Descubra tudo o que temos para lhe oferecer a nível automóvel, agrícola e de energia.</p>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <main>
+        <!-- Automobile Resale -->
+        <section class="detail-section">
+            <div class="container detail-container">
+                <div class="detail-content">
+                    <span class="section-subtitle" style="color: var(--primary);">O Primeiro Passo</span>
+                    <h2>Automóveis que Inspiram Caminhos</h2>
+                    <p>O seu carro dita o seu conforto, segurança e estilo na estrada. Por isso, oferecemos apenas viaturas rigorosamente inspecionadas que elevam a sua condução e a estabilidade da sua família.</p>
+                    <p>Desde citadinos práticos a SUVs espaçosos, entregamos todos os modelos com garantia completa. Não adie mais a viagem que merece: o crédito rápido é a nossa especialidade.</p>
+                    <a href="viaturas.html" class="btn btn-primary" style="margin-top: 1rem;">Escolher o Próximo Destino</a>
+                </div>
+                <div class="detail-image" style="background: var(--bg-main) url('car1.png') center/cover; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);"></div>
+            </div>
+        </section>
+        
+        <!-- Machinery Resale -->
+        <section class="detail-section" style="background: var(--bg-card);">
+            <div class="container detail-container reverse">
+                <div class="detail-content">
+                    <span class="section-subtitle" style="color: var(--primary);">Para o Trabalho Feroz</span>
+                    <h2>Domínio Constante no Campo</h2>
+                    <p>A terra exige força, mas o lucro exige inteligência. Comercializamos as melhores marcas de tratores e alfaias agrícolas, feitas para superar o terreno mais duro sem hesitações e multiplicar o seu rendimento diário.</p>
+                    <p>Aconselhe-se com a nossa equipa para equipar a sua exploração com maquinaria que nunca o deixará parado a meio da época.</p>
+                    <a href="contactos.html" class="btn btn-outline" style="margin-top: 1rem; border-width: 2px;">Consultar Catálogo Agrícola</a>
+                </div>
+                <div class="detail-image" style="background: var(--bg-main) url('news.png') center/cover; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);"></div>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <div class="container detail-container">
+                <div class="detail-content">
+                    <span class="section-subtitle">Energia Certa</span>
+                    <h2>Combustíveis ao Domicílio</h2>
+                    <p>Precisa de Gasóleo Agrícola para as suas máquinas ou Gasóleo de Aquecimento para a sua casa? Nós fazemos a entrega diretamente onde precisa, de forma rápida e segura ao melhor preço do mercado.</p>
+                    <p>Contamos com uma frota de distribuição especializada que cobre todo o distrito da Guarda. A comodidade de não precisar de se deslocar.</p>
+                    <a href="contactos.html" class="btn btn-primary" style="margin-top: 1rem;">Agendar Entrega</a>
+                </div>
+                <div class="detail-image" style="background: linear-gradient(135deg, #DBEAFE 0%, #93C5FD 100%); display:flex; align-items:center; justify-content:center; font-size:5rem; color:#2563EB"><i class="ph ph-gas-pump"></i></div>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <div class="container detail-container reverse">
+                <div class="detail-content">
+                    <span class="section-subtitle">Aconchego</span>
+                    <h2>Lenha Pronta a Arder</h2>
+                    <p>Durante o rigoroso inverno da Beira, não há nada como o calor de uma lareira. Comercializamos lenha seca de elevada tiragem (carvalho, azinho, entre outros) preparada e cortada à medida do seu recuperador.</p>
+                    <p>Fazemos o transporte até si. Peça o seu orçamento para a quantidade que necessita.</p>
+                    <a href="contactos.html" class="btn btn-outline" style="margin-top: 1rem;">Pedir Cotação de Lenha</a>
+                </div>
+                <div class="detail-image" style="background: var(--bg-main) url('about-bg.png') center/cover;"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                    <img src="https://moisesefilhos.pt/images/logo.png" alt="Moisés & Filhos Logo" style="height: 40px; width: auto; filter: brightness(0) invert(1);">
+                </a>
+                <p class="footer-desc">Soluções completas de mobilidade, agricultura e energia para o distrito da Guarda.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/moisesefilhos/" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Celorico da Beira</h3>
+                <ul class="contact-list">
+                    <li><i class="ph ph-map-pin"></i> Rotunda Dr. Olegário, 9<br>6360-220 Celorico da Beira</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfautomoveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> 965 057 082 / 927 464 348</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Trancoso (Freches)</h3>
+                <ul class="contact-list">
+                    <li><i class="ph ph-map-pin"></i> Quinta da Regada - EN 102<br>6420-437 Freches</li>
+                    <li><i class="ph ph-envelope-simple"></i> mfcombustiveis@sapo.pt</li>
+                    <li><i class="ph ph-phone"></i> 271 878 800 / 965 642 896</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="viaturas.html">Automóveis em Stock</a></li>
+                    <li><a href="servicos.html">Serviços e Entregas</a></li>
+                    <li><a href="contactos.html">Contactos da Equipa</a></li>
+                    <li><a href="sobre.html">Intermediário de Crédito BNP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Moisés & Filhos. Todos os direitos reservados.</p>
+                <p>Website Design & Otimização desenvolvidos para gerar resultados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/351965057082" target="_blank" class="floating-whatsapp">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
