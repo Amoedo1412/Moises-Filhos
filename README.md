@@ -1,6 +1,8 @@
 # 🚗 Moisés & Filhos - Website Redesign
 
-![Moisés & Filhos Cover](hero_motivational.jpg) *(Substitui pelo caminho de uma imagem de capa do teu projeto, se desejares)*
+![Moisés & Filhos Cover]
+![Uploading image.png…]()
+
 
 ## 📖 Sobre o Projeto
 
